@@ -19,6 +19,10 @@
             <li><a href="#service">Service</a></li>
             <li><a href="#contact">Contact</a></li>
          </ul>
+         <div class="header_menus-toggle">
+             <i class="fa-solid fa-bars"></i>
+             <i class="fa-solid fa-xmark"></i>
+         </div>
      </header>
 
      <!-- section Home -->
@@ -27,7 +31,7 @@
              <h1 class="section-home_title">Welcome to <span>Restaurant</span>,where Flavor lives</h1>
              <div class="section-home-buttons">
                  <button class="primary-button">Contact Us</button>
-                 <button class="light-button">Explore <i class="fa-solid fa-right-long"></i> </button>
+                 <a class="light-button" href="#menus">Explore <i class="fa-solid fa-right-long"></i> </a>
              </div>
           </div>
           <img src="images/pad-thai.png" alt="pad" class="section-home-image">
@@ -159,8 +163,60 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni tempore molestiae neque atque asperiores corporis?</p>
                 </div>
              </div>
-             
          </section>
+            
+         <!-- section contact -->
+          <section class="section-contact section-menu" id="contact">
+             <div class="section-contact__info">
+                <h1 class="section-title">Contact <span>Us</span></h1>
+                <p class="section-des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, aspernatur velit enim recusandae fugit qui quasi odio doloribus quas id?</p>
+                <div class="section-contact__info-items">
+                      <div class="section-contact-item">
+                          <div class="section-contact__info-item-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <a href="#" class="section__info-itrm-link">Restaurant Street Lorem, ipsum dolor.,</a>
+                      </div>
+
+                          <div class="section-contact-item">
+                          <div class="section-contact__info-item-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                          </div>
+                          <a href="#" class="section__info-itrm-link">@RESTAURANT_Username</a>
+                      </div>
+                      
+                      
+                          <div class="section-contact-item">
+                          <div class="section-contact__info-item-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                          </div>
+                          <a href="#" class="section__info-itrm-link">RESTAURANT Name</a>
+                      </div>
+                </div>
+             </div>
+             <form action="#" class="section-contact__from">
+                      <input type="text" class="text-field" placeholder="Your name" >
+                      <input type="email" class="text-field" placeholder="Email" >
+                      <input type="tel" class="text-field" placeholder="Phone number">
+                      <textarea name="" id="" class="text-field text-field--textarea" placeholder="Message" role="5"></textarea>
+                      <button class="section-contact__from-button  secondray-buuton">Send Message</button>
+             </form>
+          </section>
+
+          <!-- SECTION FOOTER -->
+          <footer class="footer">
+             <h1 class="foote-title">Resta <span>Urant</span></h1>
+             <ul class="foote__menus">
+                 <li class="footer_menus-menu"><a href="#home">Home</a></li>
+                 <li class="footer_menus-menu"><a href="#menus">Menus</a></li>
+                 <li class="footer_menus-menu"><a href="#about">About</a></li>
+                 <li class="footer_menus-menu"><a href="#Services">Services</a></li>
+                 <li class="footer_menus-menu"><a href="#Contact">Contact</a></li>
+             </ul>
+             <div class="footer__details">
+               <p class="footer__copyright">&copy; 2025 Restaurant. All rights reserved.|Carfted by CodeArry</p>
+             </div>
+          </footer>
 
 
 
@@ -170,7 +226,8 @@
 
 
 
-
+   <script src="https://unpkg.com/scrollreveal"></script>
+   
     <script src="main.js"></script>
 </body>
 </html>
