@@ -114,11 +114,13 @@ html {
     color: var(--secondary-color);
     font-weight: 500;
     width: 100%;
+    border: 1px solid white;
    
 }
 
 .text-field::placeholder {
     font-size: 16px;
+    color: black;
 }
 
 .text-field--textarea {
@@ -129,7 +131,7 @@ html {
 
 /* HEADER */
 .header{
-     /* border: solid; */
+
      position: fixed;
      width: 100%;
      top: 0;
@@ -139,9 +141,16 @@ html {
      padding-inline: 5%;
      height: 100px;
      align-items: center;
-      background: linear-gradient(to right ,white,var(--background-primary-color));
+     transition: 0.3s ease;
+      
+}
+
+.header.shadow{
+    /* background-color: #ddd; */
+  background: linear-gradient(to right ,white,var(--background-primary-color));
       box-shadow: 0px 0px 10px rgba(0 ,0 ,0 ,0.1);
 }
+
 
 .header .header_title{
       color: var(--primary-color);
@@ -400,12 +409,19 @@ html {
      
      width: fit-content;
      
+     
 }
 
 .section-servecs_card_icon i{
      font-size: 40px;
      padding: 12px;
-     color: black;
+     color: #683300;
+     width:60px;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
 }
 
 
@@ -444,7 +460,7 @@ html {
 }
 
 .section-contact__info-item-icon{
-      background: var(--transparent-025);
+      background: var(--border-primary-color);
       padding: 8px;
       display: flex; 
       align-items: center;
@@ -452,14 +468,16 @@ html {
       width: 45px;
       height: 45px;
       border-radius: 50%;
+      border: 1px solid black;
 }
 
 .section-contact__info-item-icon i{
       font-size: 24px;
+      color: #683300;
 }
 
 .section__info-itrm-link{
-      color: wheat;
+      color: white;
       font-size: 18px;
       text-decoration: none;
       transition: 0.3s ease;
@@ -467,6 +485,7 @@ html {
 
 .section__info-itrm-link:hover{
       text-decoration: underline;
+      
 }
 
 .section-contact__from{
@@ -481,6 +500,7 @@ html {
      font-weight: 500;
      justify-content: center;
      padding: 10px;
+     cursor: pointer;
 }
 
 /* END SECTION CONTACT */
@@ -610,14 +630,8 @@ html {
 
 
 
-    /* END HEADER */
 
-    /* SECTION HOME */
-   
 
-    /* END SECTION HOME */
-
-    /* SECTION ABOUT */
      
     .section-about{
       flex-direction: column-reverse;

@@ -24,6 +24,11 @@
 
 // console.log(calculateSum(10,15));
 
+let header=document.querySelector('.header');
+addEventListener("scroll",()=>{
+     header.classList.toggle('shadow',window.scrollY > 0 );
+});
+
 
 
 let headerMenuToggle=document.querySelector(".header_menus-toggle");
@@ -34,6 +39,10 @@ headerMenuToggle.addEventListener("click",()=>{
      headerMenuss.classList.toggle('active');
 });
 
+
+window.onscroll=()=>{
+    headerMenuss.classList.remove('active');
+};
 
 
  ScrollReveal(
